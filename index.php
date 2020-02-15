@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="burger">
+        <div class="burger show">
             <i class="fas fa-bars fa-2x"></i>
         </div>
-        <nav class="nav">
+        <nav class="nav hide">
             <a href="#" class="link">PRODUITS</a>
             <a href="#" class="link">GAMME RTX</a>
             <a href="#" class="link"> SUPPORT & PILOTES</a>
@@ -22,8 +22,10 @@
         <header class="header">
             <figure class="img_head">            
                 <img src="public/images/nividia.jpg" alt="photo carte graphique">
-                <figcaption>Plus d'informations sur la gamme GeForce RTX</figcaption>
-                <a href="" class="decouvrir">Découvrir</a>
+                <div class="sous">
+                    <figcaption>Plus d'informations sur la gamme GeForce RTX</figcaption>
+                    <a href="" class="decouvrir">Découvrir</a>
+                </div>
             </figure>
             <figure class="img_head_mob"> 
                 <div class="img_mob">
@@ -39,7 +41,7 @@
                     <div class="img_puissance">
                         <img src="public/images/logo_vierge.png" alt="logo nividia seul">
                     </div>
-                    LA PUISSANCE, TOUT SIMPLEMENT
+                   <span> LA PUISSANCE, TOUT SIMPLEMENT</span>
                 </h1>
                 <p class="txt_puissance">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellat, 
@@ -84,31 +86,46 @@
                     <p class="txt_aside">aliquam, numquam suscipit labore at. Voluptatibus, corporis dolorum!</p>
                     <p class="txt_aside">aliquam, numquam suscipit</p>
                     <div class="social">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                        <i class="fab fa-snapchat-ghost fa-2x"></i>
+                        <span class="fab fa-facebook-f fa-2x"></span>
+                        <span class="fab fa-twitter fa-2x"></span>
+                        <span class="fab fa-instagram fa-2x"></span>
+                        <span class="fab fa-linkedin-in fa-2x"></span>
+                        <span class="fab fa-snapchat-ghost fa-2x"></span>
                     </div>
                 </article>
             </aside>
         </div>
     </div>
     <footer class="footer">
+        <div title="gal" name="part" class="affich_section"><i class="far fa-envelope fa-4x"></i>
         <div class="footer_section">
-            <h2 class="titre_container"></h2>
-            <div class="container_footer">
-                <input type="text" class="input" placeholder="Nom">
-                <input type="text" class="input" placeholder="Email">
+                <div class="container_footer hide news">
+                    <h2 class="titre_container">NEWSLETTER</h2>
+                    <input type="text" class="input" placeholder="Nom">
+                    <input type="text" class="input" placeholder="Email">
+                    <input type="submit" value="s'inscrire">
+                </div>
             </div>
         </div>
-        <div class="footer_section">
-            <div class="container_footer"></div>
-            <h2 class="titre_container"></h2>
+        <div title="news" name="part" class="affich_section"><i class="far fa-images fa-4x"></i>
+            <div class="footer_section">
+                <div  class="container_footer hide gal">
+                    <h2 class="titre_container"></h2>
+                    <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                    <div class="img_footer"><img src="public/images/nividia.jpg" alt="photo carte graphique"></div>
+                    <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                </div>
+            </div>
         </div>
-        <div class="footer_section">
-            <div class="container_footer"></div>
-            <h2 class="titre_container"></h2>
+        <div title="news" name="gal" class="affich_section"><i class="fas fa-users fa-4x"></i>
+            <div class="footer_section">
+                <div class="container_footer hide part">
+                    <h2 class="titre_container"></h2>
+                    <div class="img_footer"><img src="public/images/intel.png" alt="logo intel"></div>
+                    <div class="img_footer"><img src="public/images/asus.png" alt="logo asus"></div>
+                    <div class="img_footer"><img src="public/images/ea.png" alt="logo ea"></div>
+                </div>
+            </div>
         </div>
     </footer>
     <script
