@@ -16,13 +16,13 @@
                 <a href="" class="decouvrir">Découvrir</a>
             </figure>
             <i class="burger fas fa-bars fa-2x"></i>
-            <nav class="nav">
-                <i class="close fas fa-times"></i>
-                <a href="#" class="link">PRODUITS</a>
-                <a href="#" class="link">GAMME RTX</a>
-                <a href="#" class="link"> SUPPORT & PILOTES</a>
-                <a href="#" class="link">CONTACT</a>
-            </nav>
+                <nav class="nav">
+                    <a href="#" class="link">PRODUITS</a>
+                    <a href="#" class="link">GAMME RTX</a>
+                    <a href="#" class="link"> SUPPORT & PILOTES</a>
+                    <a href="#" class="link">CONTACT</a>
+                    <i class="close fas fa-times fa-4x"></i>
+                </nav>
         </header>
         <div class="main">
         </div>
