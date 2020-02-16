@@ -21,21 +21,10 @@ img{
 }
 .nav{
     flex-direction: column;
-    
-    position:sticky;
-    top:2em;
-    align-items: center;
-    position : sticky;
-    justify-content: space-around;
-    top: 2em;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 1em;
+    z-index: 2;
     background-color: rgb(0,0,0,0.5);
     z-index: 1;
-    padding:6em 0;
-    opacity: 0;
+    padding:6em 0; */
     
 }
 .close{
@@ -45,12 +34,15 @@ img{
     z-index: 2;
 }
 .nav a{
+    width: 100%;
+    text-align: center;
     text-decoration: none;
-    width:80%;
+    color: white;
+
+   width:80%;
     height: 4em;
     font-size: 1.5em;
     text-align: center;
-    color: white;
     border: 1px solid black;
     box-shadow: 4px 4px 4px  white;
     padding:2em 0;
@@ -86,6 +78,25 @@ img{
     display: flex;
     justify-content: space-around;
 }
+.cache_p{
+    height: 35vh;
+    overflow: hidden;
+    position: relative;
+}
+.cache_p span{
+    position:absolute;
+    right:0;
+    top:33vh;
+    background-color: rgb(255,255,250,0.5);
+    color: blue;
+    z-index: 2;
+}
+.cache_a{
+    height: 0vh;
+    overflow: hidden;
+    position: relative;
+}
+
 .img_puissance{
     margin: 0;
     width:2.5em;
@@ -115,7 +126,6 @@ img{
     display: flex;
     justify-content: space-around;
     padding: 1em;
-    padding-top: 5em;
 }
 .container_footer input{
     width: 10em;
@@ -136,7 +146,7 @@ img{
   }
 
   @media screen and (min-width: 768px) and (max-width:1024px) {
-        .header{
+        /* .header{
             position: relative;
         }
         .img_head{
@@ -164,9 +174,6 @@ img{
             color:white;
             padding: 0.5em;
             margin-right:0.5em;
-        }
-        figcaption{
-           
         }
   }
   @media screen and (min-width: 1024px){
@@ -222,9 +229,31 @@ img{
         display: flex;
         border-bottom: 2px solid  rgb(116, 183, 26);;
     }
+    .img_puissance{
+        float: left;
+    }
     .titre_puissance{
         width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .titre_puissance span{
+       padding-left: 1em;
     }
     .titre_aside{
         flex-direction: column;
     }
+    .cont_in{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_footer{
+        flex-direction: row;
+    }
+    .container_footer:ntch-child(2{
+        align-items: flex-end;
+    }
+    .far,.fas{
+        display: none;
+    } */
+}
