@@ -37,27 +37,47 @@ if(windowHeight >768){
 }
 
 $(".affich_txt").click(function(){
-    $(".cache_p").css("height","auto");
-
+    var el = $('.cache_p'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+    el.height(curHeight).animate({height: autoHeight}, 1000);
     $(this).addClass('hide');
 })
 $(".titre_aside").click(function(){
-     $(".cache_a").css("height","auto");
+    var el = $('.cache_a'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+    el.height(curHeight).animate({height: autoHeight}, 1000);
+    $(this).addClass('hide');
      $(this).addClass('hide');
  })
  $('.burger').click(function() {
-     var options = { to: { width: 280, height: 1000} };
-     $( ".nav" ).show( "blind", options, 500, function() {
-         $(this).css("position","sticky");
-         $(this).css("top","1vh");
-         $(this).css("display","flex");
-         $(this).css("align-items","center");
-         $(this).css("flex-direction","coloumn");
-        });
+    $('.nav').addClass('show');
+    $( ".nav" ).animate({
+        height: 500,
+        padding:0
+    }, 300)
+    $('.nav').addClass('show');
+    $('.nav').removeClass('hide');
+      $( ".nav a" ).animate({
+        height: 'auto',
+        padding:0
+      }, 300)
  });
  $(".close").click(function(){
-    $(".nav").css("display","none");
-    
+    var options = { to: { width: 0, height: "auto"} };
+    console.log('tatat')
+    $('.nav').removeClass('hide');
+    $( ".nav" ).animate({
+        height: 0,
+        padding:0
+      }, 300)
+      $( ".nav a" ).animate({
+        padding:0
+      }, 300,function(){
+        $(".nav").removeClass("show")
+        $(".nav").addClass("hide")
+      })
     $(".burger").removeClass("hide");
     $(".nav").removeAttr("style");
     $(".burger").addClass("show");

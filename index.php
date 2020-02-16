@@ -18,7 +18,7 @@
             <a href="#" class="link">GAMME RTX</a>
             <a href="#" class="link"> SUPPORT & PILOTES</a>
             <a href="#" class="link">CONTACT</a>
-            <i class="close fas fa-times fa-4x"></i>
+            <i class="close fas fa-times fa-2x"></i>
         </nav>
         <header class="header">
             <figure class="img_head">            
