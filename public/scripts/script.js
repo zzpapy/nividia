@@ -6,12 +6,7 @@
 //     $(".burger").addClass("hide");
 // })
 
-$(".nav a").click(function(){
-    $(".nav").css("display","none");    
-    $(".nav").removeAttr("style");
-    $(".burger").removeClass("hide");
-    $(".burger").addClass("show");
-})
+
 $(".affich_section").click(function(){
     $(this).find("div").addClass("show");
     $('.footer').find("i").addClass("show");
@@ -56,7 +51,10 @@ $(".titre_aside").click(function(){
     $( ".nav" ).animate({
         height: 500,
         padding:0
-    }, 300)
+    }, 300,function(){
+        $('.nav').css("position","sticky");
+        $('.nav').css("top","1em");
+    })
     $('.nav').addClass('show');
     $('.nav').removeClass('hide');
       $( ".nav a" ).animate({
@@ -65,6 +63,24 @@ $(".titre_aside").click(function(){
       }, 300)
  });
  $(".close").click(function(){
+    var options = { to: { width: 0, height: "auto"} };
+    console.log('tatat')
+    $('.nav').removeClass('hide');
+    $( ".nav" ).animate({
+        height: 0,
+        padding:0
+      }, 300)
+      $( ".nav a" ).animate({
+        padding:0
+      }, 300,function(){
+        $(".nav").removeClass("show")
+        $(".nav").addClass("hide")
+      })
+    $(".burger").removeClass("hide");
+    $(".nav").removeAttr("style");
+    $(".burger").addClass("show");
+})
+$(".nav a").click(function(){
     var options = { to: { width: 0, height: "auto"} };
     console.log('tatat')
     $('.nav').removeClass('hide');
