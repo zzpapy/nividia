@@ -13,13 +13,6 @@
         <div class="burger show">
             <i class="fas fa-bars fa-2x"></i>
         </div>
-        <nav class="nav hide accordion">
-            <i class="close fas fa-times fa-2x"></i>
-            <a href="#" class="link">PRODUITS</a>
-            <a href="#" class="link">GAMME RTX</a>
-            <a href="#" class="link"> SUPPORT & PILOTES</a>
-            <a href="#" class="link">CONTACT</a>
-        </nav>
         <header class="header">
             <figure class="img_head">            
                 <img src="public/images/nividia.jpg" alt="photo carte graphique">
@@ -36,15 +29,22 @@
                 </div>           
             </figure>
         </header>
+        <nav class="nav hide accordion">
+            <i class="close fas fa-times fa-2x"></i>
+            <a href="#" class="link">PRODUITS</a>
+            <a href="#" class="link">GAMME RTX</a>
+            <a href="#" class="link"> SUPPORT & PILOTES</a>
+            <a href="#" class="link">CONTACT</a>
+        </nav>
         <div class="main">
             <article  class="puissance">
                          
-                <h3 class="titre_puissance">
-                    <div class="img_puissance">
+               
+                <h1><div class="img_puissance">
                         <img src="public/images/logo_vierge.png" alt="logo nividia seul">
                     </div>
-                    <span> LA PUISSANCE, TOUT SIMPLEMENT</span>
-                </h3>
+                     LA PUISSANCE, TOUT SIMPLEMENT</h1>
+               
                 <div class="cache_p">
                     <span class="affich_txt" >lire la suite...</span>
 

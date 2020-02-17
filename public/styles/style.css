@@ -69,6 +69,7 @@ img{
     position: sticky;
     justify-content: flex-start;
     top: 0;
+    z-index: 1;
 }
 .puissance{
     display: flex;
@@ -149,15 +150,41 @@ img{
   @media screen and (min-width: 768px) and (max-width:1024px) {
         .header{
             position: relative;
+            padding: 0;
         }
         .img_head{
             display:block;
         }
-        .img_head_mob{
+        .main{
+            display: flex;
+        }
+        .burger,.close,.img_head_mob{
             display:none;
         }
-        .burger{
-            display:none;
+        .nav{
+            flex-direction: row;
+            z-index: 2;
+            background-color: rgb(255,255,255);
+            z-index: 1;
+            justify-content: center;
+            position: sticky;
+            top:0;
+            
+        }
+        .nav a{
+            width: 20%;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            height: auto;
+            font-size: 1em;
+            text-align: center;
+            border: 0px;
+            box-shadow:0;
+            color: black;
+            padding:0 1em;
+            
         }
         .sous{
             display: flex;
@@ -166,7 +193,7 @@ img{
             background-color: rgb(116, 183, 26,0.5);
             padding: 0.5em;
             position: absolute;
-            bottom:3.2em;
+            bottom:0.3em;
             width: 100%;
             color: white;    
         }        
@@ -176,8 +203,21 @@ img{
             padding: 0.5em;
             margin-right:0.5em;
         }
+        .cache_p,.cache_a{
+            height: auto;
+        }
+        .cache_p span{
+            display: none;
+        }
+        .titre_aside{
+            flex-direction: column;
+        }
+        .img_aside{
+            width: 100%;
+        }
+       
   }
-  /*@media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px){
     
     .header{
         position: relative;
@@ -228,18 +268,31 @@ img{
     }
     .main{
         display: flex;
-        border-bottom: 2px solid  rgb(116, 183, 26);;
-    }
-    .img_puissance{
-        float: left;
+        border-bottom: 2px solid  rgb(116, 183, 26);
+        margin-top: 2em;
     }
     .titre_puissance{
         width: 100%;
         justify-content: flex-start;
         align-items: center;
     }
+    .cache_p,.cache_a{
+        height: auto;
+    }
+    .cache_p span{
+        display: none;
+    }
     .titre_puissance span{
        padding-left: 1em;
+    }
+    .img_puissance{
+        border: 1px solid black;
+        border-radius: 5px 5px 5px 5px;
+        margin-right:0.5em;
+        width: 1.5em;
+        height: 1.5em;
+        padding:1px;
+        float: left;
     }
     .titre_aside{
         flex-direction: column;
@@ -256,5 +309,5 @@ img{
     }
     .far,.fas{
         display: none;
-    } */
+    }
 }

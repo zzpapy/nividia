@@ -24,11 +24,11 @@ $target.animate({scrollTop: $target.height()}, 1000);
 })
 var windowHeight= $(window).height();
 console.log(windowHeight);
-if(windowHeight >768){
+if(windowHeight >769){
     $('.nav').removeClass('hide');
     $('.nav').addClass('show');
-    $('.container_footer').removeClass('hide');
-    $('.container_footer').addClass('show');        
+    // $('.container_footer').removeClass('hide');
+    // $('.container_footer').addClass('show');        
 }
 
 $(".affich_txt").click(function(){
