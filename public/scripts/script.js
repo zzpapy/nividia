@@ -18,6 +18,42 @@ if(windowWidth <769){
         $('.'+close1).addClass('hide');
 
     })
+    $(".close").click(function(){
+        var options = { to: { width: 0, height: "auto"} };
+        console.log('tatat')
+        $('.nav').removeClass('hide');
+        $( ".nav" ).animate({
+            height: 0,
+            padding:0
+          }, 300)
+          $( ".nav a" ).animate({
+            padding:0
+          }, 300,function(){
+            $(".nav").removeClass("show")
+            $(".nav").addClass("hide")
+          })
+        $(".burger").removeClass("hide");
+        $(".nav").removeAttr("style");
+        $(".burger").addClass("show");
+    })
+    $(".nav a").click(function(){
+        var options = { to: { width: 0, height: "auto"} };
+        console.log('tatat')
+        $('.nav').removeClass('hide');
+        $( ".nav" ).animate({
+            height: 0,
+            padding:0
+          }, 300)
+          $( ".nav a" ).animate({
+            padding:0
+          }, 300,function(){
+            $(".nav").removeClass("show")
+            $(".nav").addClass("hide")
+          })
+        $(".burger").removeClass("hide");
+        $(".nav").removeAttr("style");
+        $(".burger").addClass("show");
+    })
 }
 console.log(windowWidth);
 if(windowWidth >769){
@@ -58,39 +94,4 @@ $(".titre_aside").click(function(){
         padding:0
       }, 300)
  });
- $(".close").click(function(){
-    var options = { to: { width: 0, height: "auto"} };
-    console.log('tatat')
-    $('.nav').removeClass('hide');
-    $( ".nav" ).animate({
-        height: 0,
-        padding:0
-      }, 300)
-      $( ".nav a" ).animate({
-        padding:0
-      }, 300,function(){
-        $(".nav").removeClass("show")
-        $(".nav").addClass("hide")
-      })
-    $(".burger").removeClass("hide");
-    $(".nav").removeAttr("style");
-    $(".burger").addClass("show");
-})
-$(".nav a").click(function(){
-    var options = { to: { width: 0, height: "auto"} };
-    console.log('tatat')
-    $('.nav').removeClass('hide');
-    $( ".nav" ).animate({
-        height: 0,
-        padding:0
-      }, 300)
-      $( ".nav a" ).animate({
-        padding:0
-      }, 300,function(){
-        $(".nav").removeClass("show")
-        $(".nav").addClass("hide")
-      })
-    $(".burger").removeClass("hide");
-    $(".nav").removeAttr("style");
-    $(".burger").addClass("show");
-})
+ 
