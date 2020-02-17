@@ -221,6 +221,10 @@ img{
       .show{
           flex-direction: row;
       }
+      .wrapper{
+          width: 75%;
+          margin: auto;
+      }
     .header{
         position: relative;
     }

@@ -109,50 +109,50 @@
                 </article>
             </aside>
         </div>
+        <footer class="footer">
+            <div title="gal" name="part" class="affich_section"><i class="far fa-envelope fa-4x"></i>
+            <div class="footer_section">
+                <div class="container_footer hide news">
+                    <div class="newsletter">
+                        <h2 class="titre_container">NEWSLETTER</h2>
+                        <div class="cont_in">
+                            <input type="text" class="input" placeholder="Nom">
+                            <input type="text" class="input" placeholder="Email">                        
+                        </div>
+                    </div>
+                    <div class="input_news">
+                        <input type="submit" value="s'inscrire">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div title="news" name="part" class="affich_section"><i class="far fa-images fa-4x"></i>
+                <div class="footer_section">
+                    <div  class="container_footer hide gal">
+                        <h2 class="titre_container">GALERIE</h2>
+                        <div class="flex_gal">
+                            <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                            <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                            <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                            <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div title="news" name="gal" class="affich_section"><i class="fas fa-users fa-4x"></i>
+                <div class="footer_section">
+                    <div class="container_footer hide part">
+                        <h2 class="titre_container">PARTENAIRES</h2>
+                        <div class="flex_gal">
+                            <div class="img_footer"><img src="public/images/intel.png" alt="logo intel"></div>
+                            <div class="img_footer"><img src="public/images/asus.png" alt="logo asus"></div>
+                            <div class="img_footer"><img src="public/images/ea.png" alt="logo ea"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="footer">
-        <div title="gal" name="part" class="affich_section"><i class="far fa-envelope fa-4x"></i>
-        <div class="footer_section">
-            <div class="container_footer hide news">
-                <div class="newsletter">
-                    <h2 class="titre_container">NEWSLETTER</h2>
-                    <div class="cont_in">
-                        <input type="text" class="input" placeholder="Nom">
-                        <input type="text" class="input" placeholder="Email">                        
-                    </div>
-                </div>
-                <div class="input_news">
-                    <input type="submit" value="s'inscrire">
-                </div>
-            </div>
-        </div>
-        </div>
-        <div title="news" name="part" class="affich_section"><i class="far fa-images fa-4x"></i>
-            <div class="footer_section">
-                <div  class="container_footer hide gal">
-                    <h2 class="titre_container">GALERIE</h2>
-                    <div class="flex_gal">
-                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
-                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
-                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
-                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div title="news" name="gal" class="affich_section"><i class="fas fa-users fa-4x"></i>
-            <div class="footer_section">
-                <div class="container_footer hide part">
-                    <h2 class="titre_container">PARTENAIRES</h2>
-                    <div class="flex_gal">
-                        <div class="img_footer"><img src="public/images/intel.png" alt="logo intel"></div>
-                        <div class="img_footer"><img src="public/images/asus.png" alt="logo asus"></div>
-                        <div class="img_footer"><img src="public/images/ea.png" alt="logo ea"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
