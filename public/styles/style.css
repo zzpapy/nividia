@@ -218,7 +218,9 @@ img{
        
   }
   @media screen and (min-width: 1024px){
-    
+      .show{
+          flex-direction: row;
+      }
     .header{
         position: relative;
     }
@@ -237,18 +239,13 @@ img{
         box-shadow: 0 0 0;
         color: black;
     }
-    .img_head{
+    .img_head,.footer_section{
         display:block;
     }
-    .img_head_mob{
+    .img_head_mob,.burger,.close,.far,.fas{
         display:none;
     }
-    .burger{
-        display:none;
-    }
-    .close{
-        display: none;
-    }
+
     .sous{
         display: flex;
         justify-content: space-between;
@@ -301,13 +298,29 @@ img{
         display: flex;
         flex-direction: column;
     }
-    .container_footer{
-        flex-direction: row;
+    .affich_section{
+        width: 33%;
     }
-    .container_footer:ntch-child(2{
+    .flex_gal{
+        display: flex;
+        justify-content: space-between;
         align-items: flex-end;
+        width: 100%;
     }
-    .far,.fas{
-        display: none;
+    .img_footer{
+        width: 8em;
+    }
+    .news{
+        justify-content: flex-start;
+    }
+    .input_news{
+        align-self: flex-end;
+    }
+    .titre_container{
+        width: 100%;
+    }
+    .part{
+        width: 80%;
+        margin-left: 1em;
     }
 }

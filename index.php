@@ -121,7 +121,9 @@
                         <input type="text" class="input" placeholder="Email">                        
                     </div>
                 </div>
+                <div class="input_news">
                     <input type="submit" value="s'inscrire">
+                </div>
             </div>
         </div>
         </div>
@@ -129,9 +131,12 @@
             <div class="footer_section">
                 <div  class="container_footer hide gal">
                     <h2 class="titre_container">GALERIE</h2>
-                    <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
-                    <div class="img_footer"><img src="public/images/nividia.jpg" alt="photo carte graphique"></div>
-                    <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                    <div class="flex_gal">
+                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                        <div class="img_footer"><img src="public/images/photo1.png" alt="photo nividia rtx 2060"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,9 +144,11 @@
             <div class="footer_section">
                 <div class="container_footer hide part">
                     <h2 class="titre_container">PARTENAIRES</h2>
-                    <div class="img_footer"><img src="public/images/intel.png" alt="logo intel"></div>
-                    <div class="img_footer"><img src="public/images/asus.png" alt="logo asus"></div>
-                    <div class="img_footer"><img src="public/images/ea.png" alt="logo ea"></div>
+                    <div class="flex_gal">
+                        <div class="img_footer"><img src="public/images/intel.png" alt="logo intel"></div>
+                        <div class="img_footer"><img src="public/images/asus.png" alt="logo asus"></div>
+                        <div class="img_footer"><img src="public/images/ea.png" alt="logo ea"></div>
+                    </div>
                 </div>
             </div>
         </div>

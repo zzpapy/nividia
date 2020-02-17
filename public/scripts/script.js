@@ -1,34 +1,30 @@
-// $(".burger").click(function(){
-//     console.log('toto')
-//     $(".nav").css("display","flex");
-//     $(".nav").fadeTo( "slow",1);
-//     $(".burger").animate("show");
-//     $(".burger").addClass("hide");
-// })
+var windowWidth= $(window).width();
+if(windowWidth <769){
+    $('.container_footer').removeClass('show');
+    $('.container_footer').addClass('hide');
+    $(".affich_section").click(function(){
+        console.log('toto')
+        $(this).find("div").addClass("show");
+        $('.footer').find("i").addClass("show");
+        var $target = $('html,body'); 
+        $target.animate({scrollTop: $target.height()}, 1000);
+        $(this).find("i").removeClass("show");
+        $(this).find("i").addClass("hide");
+        var close=$(this).attr('title');
+        var close1=$(this).attr('name');    
+        $('.'+close).removeClass('show');
+        $('.'+close).addClass('hide');
+        $('.'+close1).removeClass('show');
+        $('.'+close1).addClass('hide');
 
-
-$(".affich_section").click(function(){
-    $(this).find("div").addClass("show");
-    $('.footer').find("i").addClass("show");
-    var $target = $('html,body'); 
-$target.animate({scrollTop: $target.height()}, 1000);
-    $(this).find("i").removeClass("show");
-    $(this).find("i").addClass("hide");
-    var close=$(this).attr('title');
-    var close1=$(this).attr('name');
-    
-    $('.'+close).removeClass('show');
-    $('.'+close).addClass('hide');
-    $('.'+close1).removeClass('show');
-    $('.'+close1).addClass('hide');
-})
-var windowHeight= $(window).height();
-console.log(windowHeight);
-if(windowHeight >769){
+    })
+}
+console.log(windowWidth);
+if(windowWidth >769){
     $('.nav').removeClass('hide');
-    $('.nav').addClass('show');
-    // $('.container_footer').removeClass('hide');
-    // $('.container_footer').addClass('show');        
+    $('.nav').addClass('show');    
+    $('.container_footer').removeClass('hide');
+    $('.container_footer').addClass('show');
 }
 
 $(".affich_txt").click(function(){
