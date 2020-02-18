@@ -1,12 +1,13 @@
 :root {
     --color_principale: rgb(116, 183, 26);
+    --doc_font: Arial, Helvetica, sans-serif;
   }
 *{
     box-sizing:border-box;
     margin: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:var(--doc_font);
 }
 .hide{
     display :none;
@@ -347,7 +348,7 @@ img{
         width:3em;
         height: 2em;
         padding:0.5em 1em;
-        background-color: black;
+        background-color: var(--color_principale);
         position: absolute;
         left:-2em;
         top:50%;        
@@ -359,24 +360,36 @@ img{
     }
     .display_css:hover {
         left: 0px;
-      }    
+      } 
+    .font{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 1em;
+    }   
     .cont_css{
         display: none;
-        width: 5em;
-        height: 5em;
+        height: 15em;
+        padding: 1em;
         background-color: black;
         position: absolute;
         top:50%;
         justify-content: center;
+        flex-direction: column;
         background-color: ivory;
         align-items: center;
         border-radius: 0 15px 15px 0;
         box-shadow: 1px 1px 7px;
         transition: left 100px;
+        z-index: 1;
+    }
+    .minicolors-picker{
+        cursor: pointer;
     }
     .css{
-        width: 3em;
+        width: 10em;
         height:3em;
+        margin-top: 1em;
         padding: 0,1em;       
         display: flex;
         flex-wrap: wrap;

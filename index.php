@@ -6,22 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/styles/animation.css">
     <link rel="stylesheet" href="public/styles/fontello.css">
     <link rel="stylesheet" href="public/styles/fontello-codes.css">
     <link rel="stylesheet" href="public/styles/fontello-embedded.css">
     <link rel="stylesheet" href="public/styles/fontello-ie7.css">
     <link rel="stylesheet" href="public/styles/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="public/styles/jquery.minicolors.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-    <div class="display_css"><i style="font-size:em;color:white" class="icon-cog"></i></div>
+    
+    <div class="display_css">
+        <i style="font-size:em;color:white" class="icon-cog"></i>
+    </div>
     <div class="cont_css">
+        <div class="form-group">
+            <input type="text" id="inline" class="form-control demo" data-inline="true" value="#4fc8db">
+        </div>
         <div class="css">
-            <div class="red"></div>
-            <div class="green"></div>
-            <div class="black"></div>
-            <div class="yellow"></div>
+            <div id="color" class="red"></div>
+            <div id="color" class="green"></div>
+            <div id="color" class="black"></div>
+            <div id="color" class="yellow"></div>
+        </div>
+        <div class="font">
+            <div class="Lacquer">font</div>
+            <div class="Sriracha">font</div>
         </div>
     </div>
     <div class="wrapper">
@@ -52,9 +65,7 @@
             <a href="#" class="link">CONTACT</a>
         </nav>
         <div class="main">
-            <article  class="puissance">
-                         
-               
+            <article  class="puissance">             
                 <h1><div class="img_puissance">
                         <img src="public/images/logo_vierge.png" alt="logo nividia seul">
                     </div>
@@ -174,7 +185,8 @@
   <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="public/scripts/jquery.minicolors.js"></script>
   <script type="text/javascript" src="public/scripts/script.js"></script>
 </body>
 </html>
