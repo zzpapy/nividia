@@ -121,20 +121,23 @@ $(document).ready( function() {
       $(this).minicolors({
         control: $(this).attr('data-control') || 'hue',
         defaultValue: $(this).attr('data-defaultValue') || '',
-        format: $(this).attr('data-format') || 'hex',
+        format: $(this).attr('data-format') || 'rgb',
         keywords: $(this).attr('data-keywords') || '',
         inline: $(this).attr('data-inline') === 'true',
         letterCase: $(this).attr('data-letterCase') || 'lowercase',
-        opacity: $(this).attr('data-opacity'),
+        opacity: $(this).attr('data-opacity')==='true',
         position: $(this).attr('data-position') || 'bottom',
         swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
         change: function(value, opacity) {
           if( !value ) return;
-          if( opacity ) value += ', ' + opacity;
+          if( opacity ) value ;
+          var a = value.indexOf(")");
+          var b = " ,0.5";
+          var position = a;
+          var output = [value.slice(0, position), b, value.slice(position)].join('');
+          console.log(output);
           if( typeof console === 'object' ) {
-              value = value.replace(", 1", "");
-              console.log(value);
-            document.documentElement.style.setProperty('--color_principale', value);
+            document.documentElement.style.setProperty('--color_principale', output);
           }
         }
       });
@@ -143,3 +146,4 @@ $(document).ready( function() {
   $( ".cont_css" ).mouseleave(function() {
     $(".cont_css").css("display","none");
   });
+ 
