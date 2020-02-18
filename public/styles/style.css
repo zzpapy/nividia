@@ -364,12 +364,12 @@ img{
     .font{
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
         margin-top: 1em;
     }   
     .cont_css{
         display: none;
-        height: 15em;
+        height: 17em;
         padding: 1em;
         background-color: black;
         position: absolute;
@@ -395,14 +395,19 @@ img{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .css div{
+    .css div,.font div{
         border-radius: 50%;
         cursor: pointer;
+    }
+    .font div i{
+        box-shadow: 1px 1px 7px;
+        border-radius: 50%;
     }
     .css div:nth-child(1){
         width: 1.2em;
         height: 1.2em;
         background-color: red;
+        border-radius: 50%;
     }
     .css div:nth-child(2){
         width: 1.2em;

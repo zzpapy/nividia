@@ -33,8 +33,9 @@
             <div id="color" class="yellow"></div>
         </div>
         <div class="font">
-            <div class="Lacquer">font</div>
-            <div class="Sriracha">font</div>
+            <div class="Lacquer"><i class="fab fa-adn fa-2x"></i></div>
+            <div class="Sriracha"><i class="fab fa-adn fa-2x"></i></div>
+            <div class="Arial"><i class="fab fa-adn fa-2x"></i></div>
         </div>
     </div>
     <div class="wrapper">
