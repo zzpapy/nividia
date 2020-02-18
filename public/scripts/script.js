@@ -96,4 +96,14 @@ $(".titre_aside").click(function(){
         padding:0
       }, 300)
  });
- 
+ $(".css div").click(function(){
+     var color=$(this).attr('class');
+     console.log(color);
+      document.documentElement.style.setProperty('--color_principale', color);
+  })
+  $(".display_css").click(function(){
+      $(".cont_css").css("display","flex");
+ })
+ $(".css div").click(function(){
+    $(".cont_css").css("display","none");
+})

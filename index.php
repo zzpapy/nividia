@@ -6,9 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="public/styles/animation.css">
+    <link rel="stylesheet" href="public/styles/fontello.css">
+    <link rel="stylesheet" href="public/styles/fontello-codes.css">
+    <link rel="stylesheet" href="public/styles/fontello-embedded.css">
+    <link rel="stylesheet" href="public/styles/fontello-ie7.css">
+    <link rel="stylesheet" href="public/styles/fontello-ie7-codes.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
+    <div class="display_css"><i style="font-size:em;color:white" class="icon-cog"></i></div>
+    <div class="cont_css">
+        <div class="css">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="black"></div>
+            <div class="yellow"></div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="burger show">
             <i class="fas fa-bars fa-2x"></i>
@@ -47,7 +62,6 @@
                
                 <div class="cache_p">
                     <span class="affich_txt" >lire la suite...</span>
-
                     <p class="txt_puissance">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellat, 
                         asperiores quisquam similique quas tempora deleniti. Rerum a, nihil,
