@@ -86,14 +86,17 @@ img{
     justify-content: space-around;
 }
 .cache_p{
-    height: 35vh;
+    height: 25vh;
     overflow: hidden;
     position: relative;
 }
 .cache_p span{
     position:absolute;
     right:0;
-    top:33vh;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    top:23vh;
     background-color: rgb(255,255,250,0.5);
     color: blue;
     z-index: 2;
