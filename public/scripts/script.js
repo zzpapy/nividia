@@ -98,6 +98,7 @@ $(".titre_aside").click(function(){
  });
  $(".css div").hover(function(){
      var color=$(this).attr('class');
+     console.log(color)
       document.documentElement.style.setProperty('--color_principale', color);
   })
   $(".font div").hover(function(){

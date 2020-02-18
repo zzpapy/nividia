@@ -31,6 +31,7 @@
             <div id="color" class="green"></div>
             <div id="color" class="black"></div>
             <div id="color" class="yellow"></div>
+            <div id="color" class="rgb(116,183,26);"></div>
         </div>
         <div class="font">
             <div  style="font-family:Lacquer;font-size:2em;width:1.5em;text-align:center;height:1.5em;text-align:center" class="Lacquer">A</div>
