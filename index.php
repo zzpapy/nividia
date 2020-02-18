@@ -33,9 +33,9 @@
             <div id="color" class="yellow"></div>
         </div>
         <div class="font">
-            <div class="Lacquer"><i class="fab fa-adn fa-2x"></i></div>
-            <div class="Sriracha"><i class="fab fa-adn fa-2x"></i></div>
-            <div class="Arial"><i class="fab fa-adn fa-2x"></i></div>
+            <div  style="font-family:Lacquer;font-size:2em;width:1.5em;text-align:center;height:1.5em;text-align:center" class="Lacquer">A</div>
+            <div style="font-family:Sriracha;font-size:2em;width:1.5em;text-align:center;height:1.5em;text-align:center" class="Sriracha">A</div>
+            <div style="font-family:Arial;font-size:2em;width:1.5em;text-align:center;height:1.5em;text-align:center" class="Arial">A</div>
         </div>
     </div>
     <div class="wrapper">

@@ -96,15 +96,17 @@ $(".titre_aside").click(function(){
         padding:0
       }, 300)
  });
- $(".css div").click(function(){
+ $(".css div").hover(function(){
      var color=$(this).attr('class');
-     console.log(color);
       document.documentElement.style.setProperty('--color_principale', color);
   })
-  $(".font div").click(function(){
+  $(".font div").hover(function(){
     var font=$(this).attr('class');
-    console.log(font);
+    $(this).css("box-shadow","0 0 0");
      document.documentElement.style.setProperty('--doc_font', font);
+     $(".font div").mouseleave(function(){
+        $(this).css("box-shadow","1px 1px 7px");
+     })
  })
   $(".display_css").click(function(){
       $(".cont_css").css("display","flex");
@@ -139,5 +141,5 @@ $(document).ready( function() {
     });
   });
   $( ".cont_css" ).mouseleave(function() {
-    // $(".cont_css").css("display","none");
+    $(".cont_css").css("display","none");
   });

@@ -350,7 +350,7 @@ img{
         padding:0.5em 1em;
         background-color: var(--color_principale);
         position: absolute;
-        left:-2em;
+        left:-1em;
         top:50%;        
         border-radius: 0 15px 15px 0;
         cursor: pointer;
@@ -397,10 +397,11 @@ img{
     }
     .css div,.font div{
         border-radius: 50%;
+        box-shadow: 1px 1px 7px;
         cursor: pointer;
     }
     .font div i{
-        box-shadow: 1px 1px 7px;
+        
         border-radius: 50%;
     }
     .css div:nth-child(1){
