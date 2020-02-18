@@ -138,7 +138,7 @@ $(document).ready( function() {
           var output = [value.slice(0, position), b, value.slice(position)].join('');
           console.log(output);
           if( typeof console === 'object' ) {
-            document.documentElement.style.setProperty('--color_principale', output);
+            document.documentElement.style.setProperty('--color_principale', value);
           }
         }
       });
