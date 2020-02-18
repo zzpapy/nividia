@@ -1,9 +1,18 @@
 var windowWidth= $(window).width();
-if(windowWidth <769){
+console.log(windowWidth <=768)
+console.log(windowWidth);
+if(windowWidth >=768){
+    console.log('tatat')
+    $('.nav').removeClass('hide');
+    $('.nav').addClass('show');    
+    $('.container_footer').removeClass('hide');
+    $('.container_footer').addClass('show');
+}
+if(windowWidth <768){
     $('.container_footer').removeClass('show');
     $('.container_footer').addClass('hide');
+    console.log('toto')
     $(".affich_section").click(function(){
-        console.log('toto')
         $(this).find("div").addClass("show");
         $('.footer').find("i").addClass("show");
         var $target = $('html,body'); 
@@ -20,18 +29,17 @@ if(windowWidth <769){
     })
     $(".close").click(function(){
         var options = { to: { width: 0, height: "auto"} };
-        console.log('tatat')
         $('.nav').removeClass('hide');
         $( ".nav" ).animate({
             height: 0,
             padding:0
-          }, 300)
-          $( ".nav a" ).animate({
+        }, 300)
+        $( ".nav a" ).animate({
             padding:0
-          }, 300,function(){
+        }, 300,function(){
             $(".nav").removeClass("show")
             $(".nav").addClass("hide")
-          })
+        })
         $(".burger").removeClass("hide");
         $(".nav").removeAttr("style");
         $(".burger").addClass("show");
@@ -55,13 +63,7 @@ if(windowWidth <769){
         $(".burger").addClass("show");
     })
 }
-console.log(windowWidth);
-if(windowWidth >769){
-    $('.nav').removeClass('hide');
-    $('.nav').addClass('show');    
-    $('.container_footer').removeClass('hide');
-    $('.container_footer').addClass('show');
-}
+
 
 $(".affich_txt").click(function(){
     var el = $('.cache_p'),

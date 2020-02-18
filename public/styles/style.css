@@ -166,7 +166,7 @@ img{
         .main{
             display: flex;
         }
-        .burger,.close,.img_head_mob{
+        .close,.img_head_mob{
             display:none;
         }
         .nav{
